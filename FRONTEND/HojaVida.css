@@ -1,0 +1,67 @@
+
+.contenedor{
+    display: flex;
+}
+.izq , .derecha{
+    flex: 1;
+}
+.izq{
+    background-color: rgb(18, 154, 227);
+}
+.derecha{
+    background-color: rgb(18, 168, 148);
+}
+.foto{
+height: 12rem;
+width: 12rem;
+border-radius: 100%;
+}
+.centrar{
+
+    border-radius: 100%;
+    align-items: center;
+    text-align: center;
+}
+.nombre{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+.Contacto{
+    display: flex;
+}
+.iconI{
+    height: 2rem;
+    
+
+}
+.iconos, .info, .e{
+    flex: 2;
+}
+.iconos{
+text-align: center;
+}
+.data{
+  text-align: justify; 
+}
+.titulos{
+    text-align: center;
+    font-weight: bold;  
+}
+.locales{
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    
+
+}
+.Personal{
+    display: flex;
+}
+.izqu , .derechaa{
+    flex: 1;
+}
+.izqu{
+  text-align: center;
+}
+body{
+    background-color: black;
+}
