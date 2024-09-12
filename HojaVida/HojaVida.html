@@ -6,7 +6,9 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="HojaVida.css">
     <title>Hoja de Vida</title>
 </head>
@@ -65,8 +67,17 @@
             <div class="e">
                 <p></p>
             </div>
-        </div>       
-
+        </div>     
+        <br><br><br>  
+        <div class="wrapper">
+            <button onclick="contacto()">
+                Contactame
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+          </div>
         <p></p>
         <br><br><br><br>
         <p></p>
@@ -83,14 +94,14 @@
 <br>
 <h1 class="locales">Tienda de Aseo</h1>
 </div>
-<div class="derecha">
+<div class="derechaa">
     <div class="expe">
         <br>
-   <p class="exp">Administrador y vendedor del
-    local  <strong> (2019-2021)</strong> 
+   <p class="exp">Auxiliar polivante <strong>(2022-2023) </strong> 
     </p>
    <br> 
-  <p class="exp">Auxiliar polivante  <strong>(2022-2023) </strong></p> 
+  <p class="exp"> Administrador y vendedor del
+    local  <strong> (2019-2021)</strong></p> 
 </div>
 </div>
     </div>
@@ -103,9 +114,10 @@
     <br>
     <h1 class="locales">Inteligencia Artificial Nivel Explorador</h1>
     <br>
+    <br>
     <h1 class="locales">Inteligencia Artifical y Productividad</h1>
     </div>
-    <div class="derecha">
+    <div class="derechaa">
         <div class="expe">
             <br>
        <p class="exp">Liceo Lorens</p>
@@ -120,5 +132,32 @@
     </div>
 
     </div></div>
+    <div id="cancelModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>¿Estas Seguro? Seras redireccionado</p>
+            <div class="modal-buttons">
+                <button class="success-btn" onclick="Si()">Sí</button>
+                <button class="error-btn" onclick="closeModal()">No, regresar</button>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+ function contacto() {
+    var modal=document.getElementById("cancelModal");
+    modal.style.display="block";
+ }
+ function closeModal() {
+    var modal = document.getElementById("cancelModal");
+    modal.style.display = "none"; 
+}
+function Si(){
+closeModal();
+var numero="+573142045430";
+var mensaje="Hola, Buen Dia"
+var url=`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+window.location.href=url;
+}
+</script>
 </html>
